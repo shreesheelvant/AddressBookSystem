@@ -1,24 +1,25 @@
 package com.bridgelabz;
 
 public class Contact {
+
     private String firstName;
     private String lastName;
     private String address;
     private String city;
     private String state;
-    private String email;
-    private String phoneNumber;
     private String zipcode;
+    private String phoneNumber;
+    private String email;
 
-    public Contact(String firstName, String lastName, String address, String city, String state, String email, String phoneNumber, String zipcode) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.address = address;
-        this.city = city;
-        this.state = state;
-        this.email = email;
-        this.phoneNumber = phoneNumber;
-        this.zipcode = zipcode;
+    public Contact(String firstName, String lastName, String address, String city, String state, int zip, long phoneNumber, String email) {
+        this.setFirstName(this.firstName);
+        this.setLastName(this.lastName);
+        this.setAddress(this.address);
+        this.setCity(this.city);
+        this.setState(this.state);
+        this.setZipCode(this.zipcode);
+        this.setPhoneNumber(this.phoneNumber);
+        this.setEmail(this.email);
     }
 
     public Contact() {
@@ -104,5 +105,8 @@ public class Contact {
     }
 
     public void setZipCode(String next) {
+    }
+
+    public void setZip(int parseInt) {
     }
 }
