@@ -166,5 +166,13 @@ public class AddressBookSystem {
             }
         }
     }
-}
 
+    // Method to sort person by method
+    public void sortByPersonName(){
+        if (addressBook.isEmpty()) {
+            System.out.println("Contact book is empty");
+        } else {
+            addressBook.stream().sorted(Comparator.comparing(Contact::getFirstName)).forEach(System.out::println);
+        }
+    }
+}
