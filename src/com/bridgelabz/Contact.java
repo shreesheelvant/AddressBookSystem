@@ -109,4 +109,7 @@ public class Contact {
 
     public void setZip(int parseInt) {
     }
+
+    public void setZip(String next) {
+    }
 }
