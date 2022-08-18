@@ -1,29 +1,27 @@
 package com.bridgelabz;
-
 public class Contact {
-
     private String firstName;
     private String lastName;
     private String address;
     private String city;
     private String state;
-    private String zipcode;
+    private String zip;
     private String phoneNumber;
     private String email;
 
-    public Contact(String firstName, String lastName, String address, String city, String state, int zip, long phoneNumber, String email) {
+    Contact(String firstName, String lastName, String address, String city, String state, int zip, long phoneNumber, String email) {
         this.setFirstName(this.firstName);
         this.setLastName(this.lastName);
         this.setAddress(this.address);
         this.setCity(this.city);
         this.setState(this.state);
-        this.setZipCode(this.zipcode);
+        this.setZip(this.zip);
         this.setPhoneNumber(this.phoneNumber);
         this.setEmail(this.email);
     }
 
     public Contact() {
-        
+
     }
 
     public String getFirstName() {
@@ -66,12 +64,12 @@ public class Contact {
         this.state = state;
     }
 
-    public String getEmail() {
-        return email;
+    public String getZip() {
+        return zip;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setZip(String zip) {
+        this.zip = zip;
     }
 
     public String getPhoneNumber() {
@@ -82,34 +80,18 @@ public class Contact {
         this.phoneNumber = phoneNumber;
     }
 
-    public String getZipcode() {
-        return zipcode;
+    public String getEmail() {
+        return email;
     }
 
-    public void setZipcode(String zipcode) {
-        this.zipcode = zipcode;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     @Override
     public String toString() {
-        return "Contact{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", address='" + address + '\'' +
-                ", city='" + city + '\'' +
-                ", state='" + state + '\'' +
-                ", email='" + email + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
-                ", zipcode='" + zipcode + '\'' +
-                '}';
-    }
-
-    public void setZipCode(String next) {
-    }
-
-    public void setZip(int parseInt) {
-    }
-
-    public void setZip(String next) {
+        return "Person [firstName=" + firstName + ", lastName=" + lastName + ", address=" + address + ", city="
+                + city + ", state=" + state + ", zip=" + zip + ", phoneNumber=" + phoneNumber + ", email=" + email
+                + "]";
     }
 }
